@@ -4,6 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <LangVersion>9.0</LangVersion>
     <DocumentationFile>MyApi.xml</DocumentationFile>
+    <UserSecretsId>36011f40-24fd-4da7-b4cf-d3fb023f33c8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

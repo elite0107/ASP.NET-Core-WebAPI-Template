@@ -5,8 +5,12 @@ using MyApi.Models;
 using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using WebFramework.Api;
 
 namespace MyApi.Controllers.v1
@@ -124,7 +128,20 @@ namespace MyApi.Controllers.v1
         [ProducesResponseType(200)]
         public ActionResult Address(AddressDto addressDto)
         {
-            return Ok();
+            var numbers = new List<int> { 1, 2, 3, 4, 5 };
+
+            // Use LINQ to filter the numbers that are greater than 3
+            var filteredNumbers = numbers.Where(n => n > 3);
+
+            // Use LINQ to order the filtered numbers in descending order
+            var orderedNumbers = filteredNumbers.OrderByDescending(n => n);
+
+            foreach (var n in orderedNumbers)
+            {
+                Console.WriteLine(n);
+            }
+
+            return Ok(addressDto);
         }
     }
 }
