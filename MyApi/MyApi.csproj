@@ -16,7 +16,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.3" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.7" />
     <PackageReference Include="Sentry.NLog" Version="3.36.0" />
   </ItemGroup>
 
